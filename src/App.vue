@@ -1,26 +1,36 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+	<NavbarPage :scroll-to="scrollTo" />
+	<HomeTopSection @scroll="scrollTo" />
+	<HomeOfferSection />
+	<AboutUs />
+	<BookAppointment />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HomeTopSection from "./components/HomeTopSection.vue";
+import HomeOfferSection from "./components/HomeOfferSection.vue";
+import AboutUs from "./components/AboutUs.vue";
+import NavbarPage from "./components/NavbarPage.vue";
+import BookAppointment from "./components/BookAppointment.vue";
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+	name: "App",
+	components: {
+		NavbarPage,
+		HomeTopSection,
+		HomeOfferSection,
+		AboutUs,
+		BookAppointment,
+	},
+	methods: {
+		scrollTo(sectionId) {
+			const element = document.getElementById(sectionId);
+			if (element) {
+				element.scrollIntoView({ behavior: "smooth" });
+			} else {
+				console.error("Element not found:", sectionId);
+			}
+		},
+	},
+};
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
