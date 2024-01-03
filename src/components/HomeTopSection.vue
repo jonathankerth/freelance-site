@@ -4,6 +4,7 @@
 		style="
 			background-image: url('https://images.unsplash.com/photo-1551714708-6c1a0f4d3fa8?q=80&w=2944&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
 		"
+		ref="parallax"
 	>
 		<div class="overlay py-20">
 			<div class="text-center text-white">
@@ -17,6 +18,21 @@
 <script>
 export default {
 	name: "HomeTopSection",
+	mounted() {
+		window.addEventListener("scroll", this.handleScroll);
+	},
+	beforeUnmount() {
+		window.removeEventListener("scroll", this.handleScroll);
+	},
+	methods: {
+		handleScroll() {
+			const parallaxElement = this.$refs.parallax;
+			const scrollTop =
+				window.pageYOffset || document.documentElement.scrollTop;
+			const opacity = 1 - scrollTop / parallaxElement.offsetHeight;
+			parallaxElement.style.opacity = opacity;
+		},
+	},
 };
 </script>
 
@@ -28,6 +44,7 @@ export default {
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;
+	transition: opacity 0.3s ease-in-out;
 }
 
 .overlay {

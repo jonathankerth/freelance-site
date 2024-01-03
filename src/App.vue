@@ -1,9 +1,12 @@
 <template>
-	<NavbarPage :scroll-to="scrollTo" />
-	<HomeTopSection @scroll="scrollTo" />
-	<HomeOfferSection />
-	<AboutUs />
-	<BookAppointment />
+	<div>
+		<NavbarPage :scroll-to="scrollTo" />
+		<HomeTopSection @scroll="scrollTo" />
+		<HomeOfferSection />
+		<AboutUs />
+		<BookAppointment />
+		<ScrollToTop />
+	</div>
 </template>
 
 <script>
@@ -12,6 +15,7 @@ import HomeOfferSection from "./components/HomeOfferSection.vue";
 import AboutUs from "./components/AboutUs.vue";
 import NavbarPage from "./components/NavbarPage.vue";
 import BookAppointment from "./components/BookAppointment.vue";
+import ScrollToTop from "./components/ScrollToTop.vue";
 
 export default {
 	name: "App",
@@ -21,6 +25,7 @@ export default {
 		HomeOfferSection,
 		AboutUs,
 		BookAppointment,
+		ScrollToTop,
 	},
 	methods: {
 		scrollTo(sectionId) {
