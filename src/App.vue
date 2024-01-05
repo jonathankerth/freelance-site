@@ -5,6 +5,7 @@
 		<HomeOfferSection />
 		<AboutUs />
 		<BookAppointment />
+		<MyContacts />
 		<ScrollToTop />
 	</div>
 </template>
@@ -15,6 +16,7 @@ import HomeOfferSection from "./components/HomeOfferSection.vue";
 import AboutUs from "./components/AboutUs.vue";
 import NavbarPage from "./components/NavbarPage.vue";
 import BookAppointment from "./components/BookAppointment.vue";
+import MyContacts from "./components/MyContacts.vue";
 import ScrollToTop from "./components/ScrollToTop.vue";
 
 export default {
@@ -25,6 +27,7 @@ export default {
 		HomeOfferSection,
 		AboutUs,
 		BookAppointment,
+		MyContacts,
 		ScrollToTop,
 	},
 	methods: {

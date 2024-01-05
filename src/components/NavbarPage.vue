@@ -80,6 +80,12 @@
 				>
 					Book Appointment
 				</li>
+				<li
+					class="cursor-pointer hover:text-blue-400"
+					@click="scrollTo('my-contacts')"
+				>
+					Contact Me
+				</li>
 			</ul>
 		</div>
 	</nav>
