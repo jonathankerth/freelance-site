@@ -1,22 +1,23 @@
 <template>
 	<div id="about-us" class="about-section">
-		<h1 class="text-3xl font-bold">About Us</h1>
+		<h1 class="text-3xl font-bold">
+			Jonathan Gallardo-Kerth: Web Development Expertise
+		</h1>
 		<p class="mt-4">
-			Dedicated to delivering bespoke web solutions that resonate with your
-			audience.
+			Specializing in crafting state-of-the-art web solutions to elevate your
+			digital presence.
 		</p>
-		<div class="about-details mt-6">
-			<h2 class="text-2xl font-semibold">Our Mission</h2>
+		<div class="service-offerings mt-6">
+			<h2 class="text-2xl font-semibold">My Services</h2>
 			<p class="mt-2">
-				Creating stunning and efficient digital experiences tailored to your
-				needs.
+				Leveraging the latest technologies in JavaScript, React, Vue.js, and
+				Python to deliver responsive, user-centric websites and applications.
 			</p>
-			<h2 class="text-2xl font-semibold mt-4">Our Vision</h2>
+			<h2 class="text-2xl font-semibold mt-4">Innovative Solutions</h2>
 			<p class="mt-2">
-				To be at the forefront of web design innovation, empowering businesses
-				globally.
+				Committed to integrating innovative features like AI and real-time data
+				processing for dynamic and engaging user experiences.
 			</p>
-			<!-- More sections like team information, history, etc. -->
 		</div>
 	</div>
 </template>
@@ -34,12 +35,12 @@ export default {
 	background-color: #f0f0f0;
 }
 
-.about-details h2 {
+.service-offerings h2 {
 	margin-top: 20px;
 	color: #333;
 }
 
-.about-details p {
+.service-offerings p {
 	color: #555;
 }
 </style>
