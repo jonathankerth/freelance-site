@@ -1,24 +1,15 @@
-# freelance-site
+# Freelance Site
 
-## Project setup
-```
-npm install
-```
+Welcome to my [Freelance Site](https://freelance-site-kappa.vercel.app/) for Oregonized Design Co. This site is built with Vue.js and Tailwind CSS.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## Key Features
 
-### Compiles and minifies for production
-```
-npm run build
-```
+- **Responsive Design**: Built with Vue.js and Tailwind CSS for a seamless experience across all devices.
+- **Interactive Sections**: Includes services, about, contact, and booking sections for comprehensive information display.
+- **SEO Optimized**: Ensures better visibility and reach to potential clients.
+- **FontAwesome Integration**: Modern icons enhance the site's aesthetic appeal.
+- **Parallax Scrolling Effects**: Engages users with dynamic visuals.
+- **Dark and Light Themes**: Catering to user preferences for improved accessibility.
+- **Easy Navigation**: A user-friendly interface with a focus on simplicity and ease of use.
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Designed and developed by Jonathan Kerth. Please connect for me on any of my socials if you have any questions.
