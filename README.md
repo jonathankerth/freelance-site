@@ -5,11 +5,9 @@ Welcome to my [Freelance Site](https://freelance-site-kappa.vercel.app/) for Ore
 ## Key Features
 
 - **Responsive Design**: Built with Vue.js and Tailwind CSS for a seamless experience across all devices.
-- **Interactive Sections**: Includes services, about, contact, and booking sections for comprehensive information display.
 - **SEO Optimized**: Ensures better visibility and reach to potential clients.
 - **FontAwesome Integration**: Modern icons enhance the site's aesthetic appeal.
 - **Parallax Scrolling Effects**: Engages users with dynamic visuals.
-- **Dark and Light Themes**: Catering to user preferences for improved accessibility.
 - **Easy Navigation**: A user-friendly interface with a focus on simplicity and ease of use.
 
 Designed and developed by Jonathan Kerth. Please connect for me on any of my socials if you have any questions.
