@@ -22,7 +22,7 @@ export default {
 	name: "MyContacts",
 	data() {
 		return {
-			theme: "light", // Replace with your theme logic
+			theme: "light",
 			socialLinks: [
 				{
 					name: "Email",
@@ -51,7 +51,7 @@ export default {
 				{
 					name: "Twitter",
 					url: "https://twitter.com/jonathankerth",
-					icon: ["fab", "twitter"],
+					icon: ["fab", "x-twitter"],
 					class: "twitterClass",
 				},
 				{
@@ -63,9 +63,9 @@ export default {
 				{
 					name: "Threads",
 					url: "https://www.threads.net/@jonathankerth",
-					icon: ["fab", "facebook-f"],
+					icon: ["fab", "threads"],
 					class: "threadsClass",
-				}, // Replace with appropriate Threads icon if available
+				},
 			],
 		};
 	},
