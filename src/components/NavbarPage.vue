@@ -10,7 +10,6 @@
 					v-if="!mobileMenuOpen"
 					xmlns="http://www.w3.org/2000/svg"
 					class="h-6 w-6"
-					fill="none"
 					viewBox="0 0 24 24"
 					stroke="currentColor"
 				>
@@ -50,6 +49,11 @@
 					>What We Offer</a
 				>
 				<a
+					@click="scrollTo('past-work')"
+					class="hover:text-blue-400 py-1 cursor-pointer"
+					>Past Work</a
+				>
+				<a
 					@click="scrollTo('about-us')"
 					class="hover:text-blue-400 py-1 cursor-pointer"
 					>About</a
@@ -74,6 +78,13 @@
 				>
 					About
 				</li>
+				<li
+					class="cursor-pointer hover:text-blue-400"
+					@click="scrollTo('past-work')"
+				>
+					Past Work
+				</li>
+
 				<li
 					class="cursor-pointer hover:text-blue-400"
 					@click="scrollTo('book-appointment')"
@@ -118,7 +129,7 @@ export default {
 
 <style scoped>
 .navbar {
-	background-color: #1a202c; /* Tailwind gray-800 */
+	background-color: #1a202c;
 }
 
 .navbar ul {

@@ -105,14 +105,13 @@ export default {
 .social-icon {
 	transition: color 0.3s ease;
 	margin: 0 8px;
-	font-size: 24px; /* Adjust size as needed */
+	font-size: 24px;
 }
 
 .social-icon:hover {
-	transform: scale(1.1); /* Slightly enlarges the icon on hover */
+	transform: scale(1.1);
 }
 
-/* Existing styles... */
 .feature-card {
 	max-width: 300px;
 	text-align: center;

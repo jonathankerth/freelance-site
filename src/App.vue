@@ -4,6 +4,7 @@
 		<HomeTopSection @scroll="scrollTo" />
 		<HomeOfferSection />
 		<AboutUs />
+		<PastWork />
 		<BookAppointment />
 		<MyContacts />
 		<ScrollToTop />
@@ -18,6 +19,7 @@ import NavbarPage from "./components/NavbarPage.vue";
 import BookAppointment from "./components/BookAppointment.vue";
 import MyContacts from "./components/MyContacts.vue";
 import ScrollToTop from "./components/ScrollToTop.vue";
+import PastWork from "./components/PastWork.vue";
 
 export default {
 	name: "App",
@@ -29,6 +31,7 @@ export default {
 		BookAppointment,
 		MyContacts,
 		ScrollToTop,
+		PastWork,
 	},
 	methods: {
 		scrollTo(sectionId) {
