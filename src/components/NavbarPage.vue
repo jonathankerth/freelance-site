@@ -44,6 +44,11 @@
 				}"
 			>
 				<a
+					@click="scrollTo('about-us')"
+					class="hover:text-blue-400 py-1 cursor-pointer"
+					>About</a
+				>
+				<a
 					@click="scrollTo('home-offer-section')"
 					class="hover:text-blue-400 py-1 cursor-pointer"
 					>What We Offer</a
@@ -53,11 +58,7 @@
 					class="hover:text-blue-400 py-1 cursor-pointer"
 					>Past Work</a
 				>
-				<a
-					@click="scrollTo('about-us')"
-					class="hover:text-blue-400 py-1 cursor-pointer"
-					>About</a
-				>
+
 				<a
 					@click="scrollTo('book-appointment')"
 					class="hover:text-blue-400 py-1 cursor-pointer"
