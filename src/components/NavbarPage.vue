@@ -114,6 +114,8 @@ export default {
 	data() {
 		return {
 			mobileMenuOpen: false,
+			lastScrollPosition: 0,
+			isNavbarVisible: true,
 		};
 	},
 	methods: {
@@ -123,6 +125,16 @@ export default {
 		handleMobileMenuChange(event) {
 			const sectionId = event.target.value;
 			this.scrollTo(sectionId);
+		},
+		handleScroll() {
+			const currentScrollPosition =
+				window.pageYOffset || document.documentElement.scrollTop;
+			if (currentScrollPosition < this.lastScrollPosition) {
+				this.isNavbarVisible = true;
+			} else {
+				this.isNavbarVisible = false;
+			}
+			this.lastScrollPosition = currentScrollPosition;
 		},
 	},
 };

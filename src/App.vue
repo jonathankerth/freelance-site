@@ -1,6 +1,7 @@
 <template>
 	<div>
 		<NavbarPage :scroll-to="scrollTo" />
+		<FloatingNavbar :scroll-to="scrollTo" />
 		<HomeTopSection @scroll="scrollTo" />
 		<HomeOfferSection />
 		<AboutUs />
@@ -20,11 +21,13 @@ import BookAppointment from "./components/BookAppointment.vue";
 import MyContacts from "./components/MyContacts.vue";
 import ScrollToTop from "./components/ScrollToTop.vue";
 import PastWork from "./components/PastWork.vue";
+import FloatingNavbar from "./components/FloatingNavbar.vue"; // Import FloatingNavbar
 
 export default {
 	name: "App",
 	components: {
 		NavbarPage,
+		FloatingNavbar, // Register FloatingNavbar
 		HomeTopSection,
 		HomeOfferSection,
 		AboutUs,
