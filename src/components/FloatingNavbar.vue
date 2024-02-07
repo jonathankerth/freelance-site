@@ -1,11 +1,15 @@
 <template>
-	<div v-if="!isNavbarVisible" class="floating-navbar">
+	<div
+		v-if="!isNavbarVisible"
+		class="floating-navbar"
+		@click="toggleVisibility"
+	>
 		<ul>
-			<li @click="scrollTo('home-offer-section')">Offer</li>
-			<li @click="scrollTo('about-us')">About</li>
-			<li @click="scrollTo('past-work')">Work</li>
-			<li @click="scrollTo('book-appointment')">Book</li>
-			<li @click="scrollTo('my-contacts')">Contact</li>
+			<li @click.stop="scrollTo('home-offer-section')">Services</li>
+			<li @click.stop="scrollTo('about-us')">About</li>
+			<li @click.stop="scrollTo('past-work')">Work</li>
+			<li @click.stop="scrollTo('book-appointment')">Book</li>
+			<li @click.stop="scrollTo('my-contacts')">Contact</li>
 		</ul>
 	</div>
 </template>
@@ -19,6 +23,7 @@ export default {
 	data() {
 		return {
 			isNavbarVisible: true,
+			isExpanded: true, // Add state to manage visibility on mobile
 		};
 	},
 	methods: {
@@ -26,6 +31,9 @@ export default {
 			const currentScrollPosition =
 				window.pageYOffset || document.documentElement.scrollTop;
 			this.isNavbarVisible = currentScrollPosition < 100;
+		},
+		toggleVisibility() {
+			this.isExpanded = !this.isExpanded;
 		},
 	},
 	created() {
@@ -60,9 +68,16 @@ export default {
 	transition: color 0.3s ease;
 	color: rgba(255, 255, 255, 0.7);
 	margin-bottom: 5px;
+	text-align: center;
 }
 
 .floating-navbar li:hover {
 	color: #ffffff;
+}
+
+@media (max-width: 768px) {
+	.floating-navbar {
+		display: none;
+	}
 }
 </style>
