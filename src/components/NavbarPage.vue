@@ -71,7 +71,7 @@
 					class="cursor-pointer hover:text-blue-400"
 					@click="scrollTo('home-offer-section')"
 				>
-					What We Offer
+					Services
 				</li>
 				<li
 					class="cursor-pointer hover:text-blue-400"
