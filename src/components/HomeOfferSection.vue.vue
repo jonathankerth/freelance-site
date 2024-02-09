@@ -1,7 +1,7 @@
 <template>
 	<div id="home-offer-section" class="container mx-auto px-4 mt-10 mb-8">
 		<div class="text-center">
-			<h2 class="text-3xl font-semibold">What We Offer</h2>
+			<h2 class="text-3xl font-semibold">Services</h2>
 			<p class="mt-4">
 				From concept to creation, we provide full-scale web development
 				solutions tailored for your business, leveraging modern JavaScript
