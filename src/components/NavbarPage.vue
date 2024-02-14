@@ -1,5 +1,5 @@
 <template>
-	<nav class="bg-gray-800 text-white p-4">
+	<nav id="home-top-section" class="bg-gray-800 text-white p-4">
 		<div class="container mx-auto flex justify-between items-center">
 			<div class="font-bold text-xl">Oregonized Design Co.</div>
 			<button

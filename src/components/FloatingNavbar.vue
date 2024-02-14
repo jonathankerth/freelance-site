@@ -5,6 +5,7 @@
 				<span>&#x2022;&#x2022;&#x2022;</span>
 			</div>
 			<ul v-if="isExpanded">
+				<li @click.stop="scrollTo('home-top-section')">Home</li>
 				<li @click.stop="scrollTo('home-offer-section')">Services</li>
 				<li @click.stop="scrollTo('about-us')">About</li>
 				<li @click.stop="scrollTo('past-work')">Work</li>
