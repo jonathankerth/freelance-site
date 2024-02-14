@@ -1,12 +1,12 @@
 <template>
-	<section id="past-work" class="py-12">
+	<section id="past-work" class="py-12 bg-gray-100">
 		<div class="container mx-auto px-4">
 			<h2 class="text-3xl font-bold text-center mb-8">Past Work</h2>
 			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 				<div
 					v-for="project in projects"
 					:key="project.id"
-					class="rounded overflow-hidden shadow-lg"
+					class="rounded overflow-hidden shadow-lg transition duration-500 ease-in-out transform hover:-translate-y-1 hover:shadow-xl"
 				>
 					<img
 						:src="project.image"
@@ -19,17 +19,11 @@
 							{{ project.description }}
 						</p>
 					</div>
-					<div class="px-6 pt-4 pb-2">
-						<a
-							:href="project.link"
-							target="_blank"
-							class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-2"
+					<div class="px-6 pt-4 pb-2 flex justify-start space-x-2">
+						<a :href="project.link" target="_blank" class="github-btn"
 							>GitHub</a
 						>
-						<a
-							:href="project.link2"
-							target="_blank"
-							class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
+						<a :href="project.link2" target="_blank" class="live-site-btn"
 							>Live Site</a
 						>
 					</div>
@@ -38,7 +32,6 @@
 		</div>
 	</section>
 </template>
-
 <script>
 export default {
 	name: "PastWork",
@@ -81,56 +74,12 @@ export default {
 };
 </script>
 <style scoped>
-#past-work-examples {
-	background-color: #f4f4f4;
+/* Custom Button Styles */
+.github-btn {
+	@apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out transform hover:scale-105;
 }
 
-.container {
-	max-width: 1200px;
-	margin: 0 auto;
-}
-
-.project-card {
-	background-color: #ffffff;
-	border-radius: 10px;
-	overflow: hidden;
-	transition: transform 0.3s ease-in-out;
-}
-
-.project-card:hover {
-	transform: scale(1.05);
-}
-
-.project-card img {
-	width: 100%;
-	height: auto;
-	object-fit: cover;
-}
-
-.project-card .px-6 {
-	padding: 1.5rem;
-}
-
-.project-card .font-bold {
-	color: #333333;
-}
-
-.project-card .text-gray-700 {
-	color: #666666;
-}
-
-.project-card a {
-	text-decoration: none;
-	margin-top: 0.5rem;
-}
-
-.project-card a:hover {
-	text-decoration: underline;
-}
-
-@media (max-width: 768px) {
-	.grid {
-		grid-template-columns: 1fr;
-	}
+.live-site-btn {
+	@apply bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out transform hover:scale-105;
 }
 </style>
