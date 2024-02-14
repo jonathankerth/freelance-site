@@ -64,6 +64,11 @@
 					class="hover:text-blue-400 py-1 cursor-pointer"
 					>Book Appointment</a
 				>
+				<a
+					@click="scrollTo('blog')"
+					class="hover:text-blue-400 py-1 cursor-pointer"
+					>Blog</a
+				>
 			</div>
 
 			<ul class="hidden md:flex md:space-x-4">
@@ -85,7 +90,12 @@
 				>
 					Past Work
 				</li>
-
+				<li
+					class="cursor-pointer hover:text-blue-400"
+					@click="scrollTo('blog')"
+				>
+					Blog
+				</li>
 				<li
 					class="cursor-pointer hover:text-blue-400"
 					@click="scrollTo('book-appointment')"

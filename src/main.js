@@ -1,5 +1,5 @@
 import { createApp } from "vue";
-import "./assets/style.css";
+import "./assets/styles.css";
 import App from "./App.vue";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";

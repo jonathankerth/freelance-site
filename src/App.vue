@@ -7,34 +7,38 @@
 		<AboutUs />
 		<PastWork />
 		<BookAppointment />
+		<BlogSection />
 		<MyContacts />
 		<ScrollToTop />
 	</div>
 </template>
 
 <script>
+import NavbarPage from "./components/NavbarPage.vue";
+import FloatingNavbar from "./components/FloatingNavbar.vue";
 import HomeTopSection from "./components/HomeTopSection.vue";
 import HomeOfferSection from "./components/HomeOfferSection.vue";
 import AboutUs from "./components/AboutUs.vue";
-import NavbarPage from "./components/NavbarPage.vue";
+import PastWork from "./components/PastWork.vue";
 import BookAppointment from "./components/BookAppointment.vue";
 import MyContacts from "./components/MyContacts.vue";
 import ScrollToTop from "./components/ScrollToTop.vue";
-import PastWork from "./components/PastWork.vue";
-import FloatingNavbar from "./components/FloatingNavbar.vue"; // Import FloatingNavbar
+import "./assets/styles.css";
+import BlogSection from "./components/BlogSection.vue";
 
 export default {
 	name: "App",
 	components: {
 		NavbarPage,
-		FloatingNavbar, // Register FloatingNavbar
+		FloatingNavbar,
 		HomeTopSection,
 		HomeOfferSection,
 		AboutUs,
+		PastWork,
 		BookAppointment,
 		MyContacts,
 		ScrollToTop,
-		PastWork,
+		BlogSection,
 	},
 	methods: {
 		scrollTo(sectionId) {
