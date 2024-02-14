@@ -92,15 +92,15 @@
 				</li>
 				<li
 					class="cursor-pointer hover:text-blue-400"
-					@click="scrollTo('blog')"
-				>
-					Blog
-				</li>
-				<li
-					class="cursor-pointer hover:text-blue-400"
 					@click="scrollTo('book-appointment')"
 				>
 					Book Appointment
+				</li>
+				<li
+					class="cursor-pointer hover:text-blue-400"
+					@click="scrollTo('blog')"
+				>
+					Blog
 				</li>
 				<li
 					class="cursor-pointer hover:text-blue-400"
