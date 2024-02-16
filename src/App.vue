@@ -3,8 +3,9 @@
 		<NavbarPage :scroll-to="scrollTo" />
 		<FloatingNavbar :scroll-to="scrollTo" />
 		<HomeTopSection @scroll="scrollTo" />
-		<HomeOfferSection />
+
 		<AboutUs />
+		<HomeOfferSection />
 		<PastWork />
 		<BookAppointment />
 		<BlogSection />
@@ -34,6 +35,7 @@ export default {
 		HomeTopSection,
 		HomeOfferSection,
 		AboutUs,
+
 		PastWork,
 		BookAppointment,
 		MyContacts,

@@ -51,7 +51,7 @@
 				<a
 					@click="scrollTo('home-offer-section')"
 					class="hover:text-blue-400 py-1 cursor-pointer"
-					>What We Offer</a
+					>Services</a
 				>
 				<a
 					@click="scrollTo('past-work')"
@@ -74,15 +74,15 @@
 			<ul class="hidden md:flex md:space-x-4">
 				<li
 					class="cursor-pointer hover:text-blue-400"
-					@click="scrollTo('home-offer-section')"
-				>
-					Services
-				</li>
-				<li
-					class="cursor-pointer hover:text-blue-400"
 					@click="scrollTo('about-us')"
 				>
 					About
+				</li>
+				<li
+					class="cursor-pointer hover:text-blue-400"
+					@click="scrollTo('home-offer-section')"
+				>
+					Services
 				</li>
 				<li
 					class="cursor-pointer hover:text-blue-400"

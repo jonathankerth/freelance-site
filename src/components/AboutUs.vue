@@ -5,19 +5,21 @@
 		</h1>
 		<p class="mt-4">
 			Specializing in crafting state-of-the-art web solutions to elevate your
-			digital presence. Including SEO optimization.
+			digital presence. Including SEO optimization and Single Page Applications
+			(SPA).
 		</p>
 		<div class="service-offerings mt-6">
-			<h2 class="text-2xl font-semibold">My Services</h2>
+			<h2 class="text-2xl font-semibold mt-4">What makes me different?</h2>
 			<p class="mt-2">
-				Leveraging the latest technologies in JavaScript, React, Next.js,
-				Vue.js, Tailwind CSS, and Python to deliver responsive, user-centric
-				websites and applications.
+				I am committed to integrating cutting edge technologies like AI and
+				real-time data processing for creating the best possible solutions to
+				your web development needs.
 			</p>
-			<h2 class="text-2xl font-semibold mt-4">Innovative Solutions</h2>
+			<h2 class="text-2xl font-semibold mt-4">My Philosophy</h2>
 			<p class="mt-2">
-				Committed to integrating innovative features like AI and real-time data
-				processing for dynamic and engaging user experiences.
+				Continual learning and constant improvement are the cornersones of my
+				personal philosophy and first steps in building the best possible
+				software for my clients.
 			</p>
 		</div>
 	</div>
