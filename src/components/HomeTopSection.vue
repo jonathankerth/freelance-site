@@ -9,7 +9,7 @@
 		<div class="overlay py-20">
 			<div class="text-center text-white">
 				<h1 class="text-5xl font-bold mb-4">Oregonized Design Co.</h1>
-				<p class="text-xl mb-6">Crafting Unique Web Experiences</p>
+				<p class="text-xl mb-6">Portland, Oregon, USA</p>
 			</div>
 		</div>
 	</div>
